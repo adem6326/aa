@@ -1,0 +1,111 @@
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+/* Bannière décorative */
+.detail-banner {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1, #8b5cf6);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Carte principale */
+.detail-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  max-width: 600px;
+  width: 90%;
+  margin-top: -80px; /* chevauche la bannière */
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Header */
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.avatar-big {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.client-role {
+  font-size: 14px;
+  color: #6b7280;
+  background: #eef2ff;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+/* Informations */
+.detail-info p {
+  font-size: 16px;
+  margin: 12px 0;
+  padding: 10px;
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+/* Boutons */
+.detail-actions {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-edit {
+  background: #4f46e5;
+  color: #fff;
+}
+.btn-edit:hover { background: #3730a3; }
+
+.btn-delete {
+  background: #ef4444;
+  color: #fff;
+}
+.btn-delete:hover { background: #b91c1c; }
+
+.btn-back {
+  background: #6b7280;
+  color: #fff;
+}
+.btn-back:hover { background: #374151; }
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

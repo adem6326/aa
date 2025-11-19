@@ -1,0 +1,10 @@
+@import "./ClientList.css";
+
+/* Green theme for invoices */
+.invoice-banner {
+  background: linear-gradient(135deg, #10b981, #34d399, #6ee7b7);
+}
+
+.invoice-avatar {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}

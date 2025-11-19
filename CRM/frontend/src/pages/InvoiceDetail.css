@@ -1,0 +1,9 @@
+@import "./ClientDetail.css"; /* Reuse styles */
+
+/* Override for Invoice avatar */
+.avatar-big {
+  background: linear-gradient(135deg, #10b981, #34d399); /* green gradient */
+  font-size: 28px;
+  width: 80px;
+  height: 80px;
+}
